@@ -8,6 +8,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './components/Home';
 import Movies from './components/Movies';
 import Sms from './components/Sms';
+import Numbersms from './components/Numbersms';
+import Password from './components/Password';
+import Registration from './components/Registration';
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Alert, Pressable, Button} from 'react-native';
 const fontWeights = [
   "normal",
@@ -36,8 +39,11 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Agroman'>
         <Stack.Screen name="Agroman" component={Home} />
-        <Stack.Screen name="Movies" component={Movies} />
+        <Stack.Screen name="Sign" component={Movies} />
         <Stack.Screen name="Sms" component={Sms} />
+        <Stack.Screen name="Numbersms" component={Numbersms} />
+        <Stack.Screen name="Password" component={Password} />
+        <Stack.Screen name="Registration" component={Registration} />
       </Stack.Navigator>
     </NavigationContainer>
   );
